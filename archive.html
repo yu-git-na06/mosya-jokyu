@@ -6,20 +6,33 @@
     <title>ニュース一覧</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style_archive.css">
+    <link rel="stylesheet" 	href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
 </head>
 <body>
     <!-- header -->
     <header class="header">
-            <div class="header-inner">
-                <div class="header-logo"><a href="#"><img src="img/logo.png" alt="ヘッダーロゴ"></a></div>
-                <ul class="header-nav">
-                    <li class="header-nav-about"><a href="">About</a></li>
-                    <li class="header-nav-service"><a href="">Service</a></li>
-                    <li class="header-nav-news"><a href="">News</a></li>
-                    <li class="header-nav-contact"><a href="">Contact</a></li>
+        <div class="header-inner">
+            <div class="header-logo"><a href="#"><img src="img/logo.png" alt="ヘッダーロゴ"></a></div>
+            <ul class="header-nav">
+                <li class="header-nav-about"><a href="">About</a></li>
+                <li class="header-nav-service"><a href="">Service</a></li>
+                <li class="header-nav-news"><a href="">News</a></li>
+                <li class="header-nav-contact"><a href=""><i class="fas fa-file-signature"></i>Contact</a></li>
+            </ul>
+            <!-- ハンバーガーボタン -->
+                <div id="btn" class="hamburger_btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="menu" class="menu-sp">
+                    <li class="header-nav-about"><a href="#">About</a></li>
+                    <li class="header-nav-service"><a href="#">Service</a></li>
+                    <li class="header-nav-news"><a href="#">News</a></li>
+                    <li class="header-nav-contact"><a href="#"><i class="fas fa-file-signature"></i>Contact</a></li>
                 </ul>
-            </div>
-    </header>
+                <!-- モーダルウィンドウ  -->
+                <div id="modal" class="modal-sp"></div>
+        </div>
+</header>
 
     <!-- mv -->
     <section class="mv">
@@ -53,5 +66,7 @@
     <footer class="footer">
         <p>Copyright TECHI.S.,Inc.</p>
     </footer>
+
+    <script src="./hamburger.js"></script>
 </body>
 </html>
